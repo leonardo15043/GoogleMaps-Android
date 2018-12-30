@@ -47,6 +47,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .snippet("bla bla bla bla")
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
 
+        //Agregar marcador cambiando el color del icono
+        LatLng cdPeru = new LatLng(-10.479390, -75.347197);
+        mMap.addMarker(new MarkerOptions()
+                .position(cdPeru)
+                .title("Perú")
+                .snippet("bla bla bla bla")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
+
         mMap.moveCamera(CameraUpdateFactory.newLatLng(cdColombia));
     }
 }
