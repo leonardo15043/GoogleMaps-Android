@@ -42,6 +42,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //Agregar marcador con imagen
         LatLng cdColombia = new LatLng(4.837710, -74.247828);
         mMap.addMarker(new MarkerOptions()
+                .draggable(true)
                 .position(cdColombia)
                 .title("Colombia")
                 .snippet("bla bla bla bla")
